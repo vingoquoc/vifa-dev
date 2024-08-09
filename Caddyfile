@@ -1,0 +1,23 @@
+https://viravel.com {
+    root * /var/www/html/viravel/public
+
+    encode zstd gzip
+
+    php_fastcgi app:9000
+
+    file_server
+
+    tls internal
+}
+
+minagskl.com {
+    root * /var/www/html/minacom/public
+
+    encode zstd gzip
+
+    php_fastcgi app:9000
+
+    file_server
+
+    tls internal
+}
